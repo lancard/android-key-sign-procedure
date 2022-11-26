@@ -7,3 +7,6 @@
 
 # keystore로 서명
 - cordova build --release -- --keystore=worstrocker.keystore --storePassword=(암호) --alias=worstrocker --password=(암호) --packageType=bundle
+
+# 참고사항
+- Release build는 잘되는데, Debug 빌드가 zip64 어쩌구 하면서 빌드 안되면 사이즈가 너무 커서다.
