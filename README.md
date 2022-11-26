@@ -4,3 +4,6 @@
 # keystore 생성 (100년 짜리)
 - keytool -genkey -v -keystore worstrocker.keystore -alias worstrocker -keyalg RSA -keysize 4096 -validity 36500
 - 암호 입력 후 이름 및 KR 한국 코드 입력 후 yes
+
+# keystore로 서명
+- cordova build --release -- --keystore=worstrocker.keystore --storePassword=(암호) --alias=worstrocker --password=(암호) --packageType=bundle
